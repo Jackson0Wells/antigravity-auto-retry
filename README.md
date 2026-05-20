@@ -19,6 +19,8 @@ To keep things clean, the main folder only contains the essentials, while the in
 
 ## Installation & Setup
 
+<img width="607" height="287" alt="image" src="https://github.com/user-attachments/assets/8c0e0cf2-f67e-48f0-8ca4-efa2b0ea9906" />
+
 We recommend the **"Shortcut Method"** to keep things clean. It doesn't use any registry keys or "run at startup" watchers that might trigger antivirus warnings. It just wraps your normal IDE launch.
 
 1. **Download & Extract**
@@ -35,7 +37,13 @@ We recommend the **"Shortcut Method"** to keep things clean. It doesn't use any 
 
 3. **How it works after setup**
    Once you've clicked "Save and Start", the watcher silently sits in your computer's memory. You just open your normal `Antigravity IDE.exe` like you always do. The watcher spots it, monitors it, and automatically clicks "Retry" if the agent crashes. 
-   
+
+
+
+https://github.com/user-attachments/assets/7c371449-5867-494f-a1e0-c103d300c470
+
+
+
    > **Important Note:** The watcher lives in your computer's background memory. If you **restart your PC**, that memory is cleared and the watcher stops. After a reboot, simply run `Setup Antigravity Auto Retry.vbs` and click "Save and Start" again to turn the protection back on!
 
 ## Frequently Asked Questions (FAQ)
