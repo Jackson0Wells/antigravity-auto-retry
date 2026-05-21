@@ -6,6 +6,8 @@ This tool automatically detects when Antigravity IDE crashes or closes due to un
 
 ## Directory Structure
 
+<img width="761" height="360" alt="Screenshot 2026-05-20 175325" src="https://github.com/user-attachments/assets/6ffbf46d-8ef9-4940-a44f-1579e1d96b72" />
+
 To keep things clean, the main folder only contains the essentials, while the inner workings are kept inside the `core` folder.
 
 *   `Setup Antigravity Auto Retry.vbs` - The main GUI setup script you interact with to configure and start the tool.
@@ -18,7 +20,9 @@ To keep things clean, the main folder only contains the essentials, while the in
 
 ## Installation & Setup
 
-<img width="761" height="360" alt="image" src="https://github.com/user-attachments/assets/3403995b-dd2b-4fa4-b51e-d3b5c1d6c2dd" />
+
+https://github.com/user-attachments/assets/837f6464-6043-4058-960f-2c2d2f6cf230
+
 
 This tool runs purely in the background and attaches directly to your normal Antigravity IDE. It doesn't create any custom shortcuts or modify your installation. 
 
@@ -34,13 +38,9 @@ This tool runs purely in the background and attaches directly to your normal Ant
      * **Save** — Only saves your settings. The watcher does NOT start yet.
 
 3. **How it works after setup**
-   Once you've clicked "Save and Start", the watcher silently sits in your computer's background memory. You just open your normal `Antigravity IDE` like you always do. The watcher spots it, monitors it, and automatically clicks "Retry" if the agent crashes. 
+   Once you've clicked "Save and Start", the watcher silently runs in the background. You just open your normal `Antigravity IDE` like you always do — the watcher spots it, monitors it, and automatically clicks "Retry" if the agent crashes.
 
-
-https://github.com/user-attachments/assets/32d9ae15-f29c-4d57-a021-76489b58441a
-
-
-   > **Important Note:** The watcher lives in your computer's background memory. If you **restart your PC**, that memory is cleared and the watcher stops. After a reboot, simply run `Setup Antigravity Auto Retry.vbs` and click "Save and Start" again to turn the protection back on!
+   > **Note:** The watcher starts automatically every time you open the IDE via the launcher shortcut — even after a reboot. You do **not** need to re-run the setup after restarting your PC.
 
 ## Frequently Asked Questions (FAQ)
 
@@ -73,4 +73,8 @@ No, this is completely normal and not an issue with the auto-retry script! These
 
 ## Uninstall
 
-If you decide you no longer want to use the auto-retry tool, simply restart your computer (so the background process ends) and then delete the folder. It leaves no trace on your system!
+1. Open `Setup Antigravity Auto Retry.vbs` and click **"Detach / Uninstall"**. This restores your original Antigravity IDE shortcut so it points directly to the IDE again.
+2. Restart your computer (so any running background process ends).
+3. Delete this folder.
+
+> **Important:** Do NOT skip step 1. If you delete the folder without detaching first, your IDE shortcut will point to a missing file and the IDE won't open.
