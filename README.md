@@ -62,11 +62,7 @@ You can check the `core\auto-retry.log` file to see a real-time log of what the 
 **How much CPU or RAM does this use?**
 Almost zero! It is a tiny PowerShell script that sleeps for half a second, peeks at your open windows, and goes back to sleep. You will not notice it running.
 
-**What hap
-
-Uploading 2026-05-20 17-17-11.mp4…
-
-pens if I manually close Antigravity IDE when I'm done working?**
+**What happens if I manually close Antigravity IDE when I'm done working?**
 The script is smart enough to know when the window is completely gone. If you manually close the IDE, the watcher script waits a few seconds and then cleanly kills itself in the background so it doesn't run forever.
 
 **Will this trigger my Windows Defender / Antivirus?**
